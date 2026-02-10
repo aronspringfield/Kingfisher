@@ -43,7 +43,13 @@ public enum CallbackQueue: Sendable {
     
     /// Dispatches the closure to a specified `DispatchQueue`.
     case dispatch(DispatchQueue)
-    
+
+    /// Adds the closure to the specified `OperationQueue`.
+    case operationQueue(OperationQueue)
+
+    /// Adds the closure to an ordered queue that can be FIFO/LIFO configured.
+    case orderedQueue(OrderedOperationQueue)
+
     /// Executes the `block` in a dispatch queue defined by `self`.
     /// - Parameter block: The block needs to be executed.
     public func execute(_ block: @Sendable @escaping () -> Void) {
@@ -56,6 +62,10 @@ public enum CallbackQueue: Sendable {
             block()
         case .dispatch(let queue):
             queue.async { block() }
+        case .operationQueue(let queue):
+            queue.addOperation(block)
+        case .orderedQueue(let queue):
+            queue.add(block)
         }
     }
 
@@ -65,6 +75,8 @@ public enum CallbackQueue: Sendable {
         case .mainCurrentOrAsync: return .main
         case .untouch: return OperationQueue.current?.underlyingQueue ?? .main
         case .dispatch(let queue): return queue
+        case .operationQueue(let queue): return queue.underlyingQueue ?? .main
+        case .orderedQueue(let queue): return queue.underlyingQueue ?? .main
         }
     }
 }

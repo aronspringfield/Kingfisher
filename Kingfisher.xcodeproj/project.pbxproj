@@ -126,6 +126,7 @@
 		D8FCF6A821C5A0E500F9ABC0 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCF6A721C5A0E500F9ABC0 /* RedirectHandler.swift */; };
 		D9638BA61C7DC71F0046523D /* ImagePrefetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9638BA41C7DC71F0046523D /* ImagePrefetcherTests.swift */; };
 		E9E3ED8B2B1F66B200734CFF /* HasImageComponent+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3ED8A2B1F66B200734CFF /* HasImageComponent+Kingfisher.swift */; };
+		EC79394F2F3B701300D5ADE7 /* OrderedOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79394E2F3B701300D5ADE7 /* OrderedOperationQueue.swift */; };
 		F39B68C82E33AC2A00404B02 /* NetworkMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39B68C72E33AC2A00404B02 /* NetworkMetrics.swift */; };
 		F72CE9CE1FCF17ED00CC522A /* ImageModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CE9CD1FCF17ED00CC522A /* ImageModifierTests.swift */; };
 		38D5D3A32C5C757E00BF1D01 /* PixelFormatDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D5D3A42C5C757E00BF1D01 /* PixelFormatDecodingTests.swift */; };
@@ -331,6 +332,7 @@
 		D8FCF6A721C5A0E500F9ABC0 /* RedirectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
 		D9638BA41C7DC71F0046523D /* ImagePrefetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePrefetcherTests.swift; sourceTree = "<group>"; };
 		E9E3ED8A2B1F66B200734CFF /* HasImageComponent+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HasImageComponent+Kingfisher.swift"; sourceTree = "<group>"; };
+		EC79394E2F3B701300D5ADE7 /* OrderedOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedOperationQueue.swift; sourceTree = "<group>"; };
 		F39B68C72E33AC2A00404B02 /* NetworkMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMetrics.swift; sourceTree = "<group>"; };
 		F72CE9CD1FCF17ED00CC522A /* ImageModifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifierTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -479,6 +481,7 @@
 				D1839844216E333E003927D3 /* Delegate.swift */,
 				4B8351CB217084660081EED8 /* Runtime.swift */,
 				D1BA781C2174D07800C69D7B /* CallbackQueue.swift */,
+				EC79394E2F3B701300D5ADE7 /* OrderedOperationQueue.swift */,
 				388F37372B4D9CDB0089705C /* DisplayLink.swift */,
 				3ADE9AF82A73CD69009A86CA /* String+SHA256.swift */,
 			);
@@ -895,6 +898,7 @@
 				D1839845216E333E003927D3 /* Delegate.swift in Sources */,
 				D12AB6D8215D2BB50013BA68 /* ImageTransition.swift in Sources */,
 				D12F67642CAC330A00AB63AB /* LivePhotoSource.swift in Sources */,
+				EC79394F2F3B701300D5ADE7 /* OrderedOperationQueue.swift in Sources */,
 				D1A37BE8215D365A009B39B7 /* ExtensionHelpers.swift in Sources */,
 				C9286407228584EB00257182 /* ImageProgressive.swift in Sources */,
 				D12AB6DC215D2BB50013BA68 /* ImageProcessor.swift in Sources */,
